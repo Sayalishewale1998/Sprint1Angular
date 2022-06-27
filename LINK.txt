@@ -1,4 +1,4 @@
-Scaffold-DbContext "Data Source=DESKTOP-ORMR336;Initial Catalog=EcommerceDB;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
+Scaffold-DbContext "Data Source=DESKTOP-ORMR336;Initial Catalog=ECommerceDB;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
 
 
 
