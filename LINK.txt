@@ -1,5 +1,0 @@
-Scaffold-DbContext "Data Source=DESKTOP-ORMR336;Initial Catalog=ECommerceDB;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
-
-
-
-dotnet ef dbcontext scaffold "Data Source=DESKTOP-04TFFDJ;Initial Catalog=Capgi;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force

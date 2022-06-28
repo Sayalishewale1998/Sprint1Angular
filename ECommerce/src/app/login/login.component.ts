@@ -10,17 +10,18 @@ import { AuthService } from '../services/auth.service';
 })
 export class LoginComponent implements OnInit {
   loginUserData:UserData= new UserData();
-  constructor(private _auth:AuthService,private _route:Router) { }
+  constructor(private _auth:AuthService,private _router:Router) { }
 
   ngOnInit(): void {
   }
-  loginUser(){
-   this._auth.loginUser(this.loginUserData).subscribe(res=>{localStorage.setItem('token',res.token);
-   if (res.isAdmin)
-   this._route.navigate(['dashboard'])
-   else
-   this._route.navigate(['/account']);
-  }, err => console.log(err));
+  LoginUser() {
+    this._auth.loginUser(this.loginUserData).subscribe(res => {
+      localStorage.setItem('token', res.token);
+      if (res.isAdmin)
+        this._router.navigate(['/dashboard']);
+      else
+        this._router.navigate(['/account']);
+    }, err => console.log(err));
   }
 
 }

@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class ProductService {
-  private _productUrl = "https://localhost:44304/api/Product";
+  private _productUrl = "https://localhost:44328/api/Product";
   constructor(private http: HttpClient,private _router:Router) { }
 
   
